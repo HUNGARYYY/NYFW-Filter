@@ -5,24 +5,24 @@
  */
 
 // Variables
-var regex = /Trump/i;
+var regex = /NYFW/i;
 var search = regex.exec(document.body.innerText);
 
 
 // Functions
 function filterMild() {
-	console.log("Filtering Trump with Mild filter...");
-	return $(":contains('Trump'), :contains('TRUMP'), :contains('trump')").filter("h1,h2,h3,h4,h5,p,span,li");
+	console.log("Filtering NYFW with Mild filter...");
+	return $(":contains('NYFW'), :contains('New York Fashion Week'), :contains('new york fashion week')").filter("h1,h2,h3,h4,h5,p,span,li");
 }
 
 function filterDefault () {
-	console.log("Filtering Trump with Default filter...");
-	return $(":contains('Trump'), :contains('TRUMP'), :contains('trump')").filter(":only-child").closest('div');
+	console.log("Filtering NYFW with Default filter...");
+	return $(":contains('NYFW'), :contains('New York Fashion Week'), :contains('#NYFW'), :contains('new york fashion week')").filter(":only-child").closest('div');
 }
 
 function filterVindictive() {
-	console.log("Filtering Trump with Vindictive filter...");
-	return $(":contains('Trump'), :contains('TRUMP'), :contains('trump')").filter(":not('body'):not('html')");
+	console.log("Filtering NYFW with Vindictive filter...");
+	return $(":contains('NYFW'), :contains('New York Fashion Week'), :contains('#NYFW'), :contains('new york fashion week')").filter(":not('body'):not('html')");
 }
 
 function getElements(filter) {
@@ -43,7 +43,7 @@ function filterElements(elements) {
 
 // Implementation
 if (search) {
-   console.log("Donald Trump found on page! - Searching for elements...");
+   console.log("NYFW found on page! - Searching for elements...");
    chrome.storage.sync.get({
      filter: 'aggro',
    }, function(items) {
