@@ -32,6 +32,8 @@ Here's a howto to get the source of the Chrome Extension running in your environ
 git clone https://github.com/phzpw/NYFW-Filter.git
 </pre>
 
+For users who just want the plugin but don't know git, you can also download the ZIP file from this repo here, extract it and load it in chrome using the steps below
+
 2) Enable Chrome Extension in your Chrome install
 <pre>
 Open Chrome.
@@ -49,4 +51,4 @@ Meta
 -------------------------
 
 * This work is licensed under GPLv3.
-* Created in both South Congress and North loop, Austin Texas
+* Worked on in both South Congress and North loop, Austin Texas
