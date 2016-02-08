@@ -2,7 +2,7 @@
 ================================
 A Chrome extension that removes New York Fashion Week from the Internet.
 
-![logo](images/icon-550x550.png)
+![logo](images/icon-130x130.png)
 
 
 Features
